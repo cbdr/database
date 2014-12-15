@@ -4,18 +4,17 @@
 \#*#
 .*.sw[a-z]
 *.un~
-*.tmp
-*.bk
-*.bkup
-.kitchen.local.yml
-Berksfile.lock
-Gemfile.lock
+pkg/
 
-.bundle/
-.cache/
+# Berkshelf
+.vagrant
+/cookbooks
+Berksfile.lock
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
 .kitchen/
-.vagrant/
-.vagrant.d/
-bin/
-tmp/
-vendor/
+.kitchen.local.yml
