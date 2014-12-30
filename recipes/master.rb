@@ -50,7 +50,7 @@ search(:apps) do |app|
   end
 end
 
-include_recipe 'mysql::server'
+include_recipe 'mysql_pi::server'
 
 connection_info = { :host => 'localhost', :username => 'root', :password => node['mysql']['server_root_password'] }
 
